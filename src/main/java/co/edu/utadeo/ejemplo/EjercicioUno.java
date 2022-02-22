@@ -5,7 +5,7 @@
 package co.edu.utadeo.ejemplo;
 
 /**
- * @author usuario1
+ * @author Sergio Andres
  */
 public class EjercicioUno {
 
@@ -19,6 +19,10 @@ public class EjercicioUno {
         this.numero = numero;
     }
 
+    /**
+     * Falta verificar porque salen numeros negativos
+     * cuando el usuario ingresa un numero muy alto.
+     */
     public int fibonacciN() {
 
         int n1 = 0;
@@ -32,6 +36,23 @@ public class EjercicioUno {
             System.out.print(" " + n3);
             n1 = n2;
             n2 = n3;
+        }
+        return getNumero();
+
+    }
+
+    /**
+     * Hay que tener en cuenta que estoy iniciando el contador en 1,
+     * esto debido a que no se puede hacer una comparacion con el cero,
+     * a su vez la condicional se ve afectada por este caracteristica,
+     * la cual soluciono agregando mayor o igual en vez de solo mayor
+     */
+    public int primosN() {
+
+        for (int i = 1; numero >= i; i++) {
+            if (numero % i == 0) {
+                System.out.print(i + " ");
+            }
         }
         return getNumero();
 
