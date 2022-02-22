@@ -45,7 +45,7 @@ public class EjercicioUno {
      * Hay que tener en cuenta que estoy iniciando el contador en 1,
      * esto debido a que no se puede hacer una comparacion con el cero,
      * a su vez la condicional se ve afectada por este caracteristica,
-     * la cual soluciono agregando mayor o igual en vez de solo mayor
+     * la cual soluciono agregando mayor o igual en vez de solo mayor.
      */
     public int primosN() {
 
@@ -54,6 +54,34 @@ public class EjercicioUno {
                 System.out.print(i + " ");
             }
         }
+        return getNumero();
+
+    }
+
+    /**
+     * El metodo funciona, en teoria deberia realizar la multiplicacion
+     * de manera contraria, pero no lo hace. ¿Porque no lo hace?
+     *
+     * Con valores mayores a 12 el metodo deja de funcionar correctamente
+     * ¿Porque?
+     */
+    public int factorialN() {
+
+        int factorial = 1;
+
+        for (int i = 1; numero >= i; i++) {
+            /**
+             * Al reemplazar i por numero
+             */
+            factorial = factorial * i;
+            /**
+             * y agregar la siguiente linea, realiza el procedimiento
+             * contrario del contrario.
+             * numero = numero - 1;
+             */
+
+        }
+        System.out.print(factorial);
         return getNumero();
 
     }

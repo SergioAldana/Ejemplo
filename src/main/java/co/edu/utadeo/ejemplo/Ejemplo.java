@@ -6,7 +6,7 @@ package co.edu.utadeo.ejemplo;
 
 /**
  *
- * @author usuario1
+ * @author Sergio Andres
  */
 public class Ejemplo extends Thread {
 

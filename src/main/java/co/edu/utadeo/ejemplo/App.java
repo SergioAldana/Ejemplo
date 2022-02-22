@@ -7,7 +7,7 @@ package co.edu.utadeo.ejemplo;
 import java.util.Scanner;
 
 /**
- * @author usuario1
+ * @author Sergio Andres
  */
 public class App {
 
@@ -39,6 +39,9 @@ public class App {
             System.out.println(" ");
             System.out.print("Primos: ");
             ejercicioUno.primosN();
+            System.out.println(" ");
+            System.out.print("Factorial: ");
+            ejercicioUno.factorialN();
 
         } catch (ArithmeticException a) {
             System.out.println("El numero debe ser mayor a cero");
