@@ -20,6 +20,9 @@ public class App {
 
         int numero;
 
+        /**
+         * Faltaria intentarlo con el BufferedReader
+         */
         System.out.println("Ingresa un numero: ");
         Scanner entrada = new Scanner(System.in);
         numero = entrada.nextInt();
@@ -27,17 +30,20 @@ public class App {
         EjercicioUno ejercicioUno = new EjercicioUno();
         ejercicioUno.setNumero(numero);
 
-        ejercicioUno.fibonacciN();
+        /**
+         * Verificar el try-catch
+         */
+        try {
+            System.out.print("Fibonnacci: ");
+            ejercicioUno.fibonacciN();
+            System.out.println(" ");
+            System.out.print("Primos: ");
+            ejercicioUno.primosN();
 
+        } catch (ArithmeticException a) {
+            System.out.println("El numero debe ser mayor a cero");
 
-
-
-
-
-
-
-
-
+        }
 
     }
 
