@@ -27,21 +27,18 @@ public class App {
         Scanner entrada = new Scanner(System.in);
         numero = entrada.nextInt();
 
-        EjercicioUno ejercicioUno = new EjercicioUno();
-        ejercicioUno.setNumero(numero);
+        EjercicioUno ejercicioUno = new EjercicioUno(numero);
+        EjercicioUno ejercicioDos = new EjercicioUno(numero);
+        EjercicioUno ejercicioTres = new EjercicioUno(numero);
+
 
         /**
          * Verificar el try-catch
          */
         try {
-            System.out.print("Fibonnacci: ");
-            ejercicioUno.fibonacciN();
-            System.out.println(" ");
-            System.out.print("Primos: ");
-            ejercicioUno.primosN();
-            System.out.println(" ");
-            System.out.print("Factorial: ");
-            ejercicioUno.factorialN();
+            ejercicioUno.start();
+            ejercicioDos.start();
+            ejercicioTres.start();
 
         } catch (ArithmeticException a) {
             System.out.println("El numero debe ser mayor a cero");
